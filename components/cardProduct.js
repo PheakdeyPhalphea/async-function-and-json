@@ -1,7 +1,7 @@
 const placeHolder =
   "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png";
-export const cardProducds = function renderCard(products) {
-  const card = `
+export const cardProducds = (products) => {
+  return `
   <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
          <div class="w-full h-96">
           <img class="p-8 object-cover h-full rounded-t-lg" src="${(products.thumbnail ??=
@@ -42,5 +42,4 @@ export const cardProducds = function renderCard(products) {
           </div>
       </div>
       `;
-  return card;
 };
